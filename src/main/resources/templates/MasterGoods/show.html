@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+  <title>Spring Framework Guru</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"
+        href="../../css/bootstrap.min.css" />
+
+</head>
+<body>
+<h2> <a href="/">HOME</a> </h2>
+<h2>Get data from /api_v1_master_goods/upload</h2>
+<div class="alert alert-warning" role="alert" th:if="${message}">
+  <strong th:text="${message}" />
+</div>
+<figure class="highlight" th:if="${data}">
+  <pre th:text="${data}" />
+</figure>
+</body>
+</html>

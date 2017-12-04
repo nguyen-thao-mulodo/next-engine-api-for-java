@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+  <title>Spring Framework Guru</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"
+        href="../../css/bootstrap.min.css" />
+
+</head>
+<body>
+<h2> <a href="/">HOME</a> </h2>
+<h2>UPLOAD MASTER GOODS</h2>
+<div class="alert alert-warning" role="alert">
+  <strong>Please download this file and then upload again: <a href="/master_goods/download">master goods csv</a> </strong>
+</div>
+
+<form action="/master_goods/upload" method="post" enctype="multipart/form-data">
+  <div class="form-group">
+    <input type="file" name="file" id="exampleInputFile"/>
+  </div>
+
+  <input type="submit" value="submit" class="btn btn-default" />
+
+</form>
+</body>
+</html>

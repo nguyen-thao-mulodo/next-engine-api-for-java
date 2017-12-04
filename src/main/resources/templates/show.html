@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+  <title>Spring Framework Guru</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"
+        href="../../css/bootstrap.min.css" />
+
+</head>
+<body>
+
+<div class="container">
+  <h2> <a href="/">HOME</a> </h2>
+  <h2>Get data from /api_v1_receiveorder_base/search</h2>
+
+  <H2> param : </H2>
+  <p>receive_order_shop_id = 1</p>
+  <p>receive_order_date > 2015-01-19 00:00:00</p>
+  <H2> result : </H2>
+  <figure class="highlight">
+    <pre th:text="${data}" />
+  </figure>
+
+
+</div>
+
+</body>
+</html>
